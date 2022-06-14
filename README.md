@@ -37,4 +37,29 @@
     <td>Orange</td>
     <td>Master</td>
   </tr>
+  <tr>
+    <td>1900 — 2199</td>
+    <td>Violet</td>
+    <td>Candidate Master</td>
+  </tr>
+  <tr>
+    <td>1600 — 1899</td>
+    <td>Blue</td>
+    <td>Expert</td>
+  </tr>
+  <tr>
+    <td>1400 — 1599</td>
+    <td>Cyan</td>
+    <td>Specialist</td>
+  </tr>
+  <tr>
+    <td>1200 — 1399</td>
+    <td>Green</td>
+    <td>Pupil</td>
+  </tr>
+  <tr>
+    <td>0 - 1199</td>
+    <td>Gray</td>
+    <td>Newbie</td>
+  </tr>
 </table> 
