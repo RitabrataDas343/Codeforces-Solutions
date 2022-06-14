@@ -1,7 +1,5 @@
 # Codeforces-Solutions
 
-2300 — 2399	| Orange | International Master	<br>
-2200 — 2299	| Orange | Master <br>
 1900 — 2199	| Violet | Candidate Master	<br>
 1600 — 1899	| Blue	 | Expert	<br>
 1400 — 1599	| Cyan	 | Specialist	<br>
@@ -28,5 +26,15 @@
     <td>2400 — 2599</td>
     <td>Red</td>
     <td>Grandmaster</td>
+  </tr>
+  <tr>
+    <td>2300 — 2399</td>
+    <td>Orange</td>
+    <td>International Master</td>
+  </tr>
+  <tr>
+    <td>2200 — 2299</td>
+    <td>Orange</td>
+    <td>Master</td>
   </tr>
 </table> 
