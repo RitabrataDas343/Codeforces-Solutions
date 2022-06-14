@@ -1,11 +1,5 @@
 # Codeforces-Solutions
 
-1900 — 2199	| Violet | Candidate Master	<br>
-1600 — 1899	| Blue	 | Expert	<br>
-1400 — 1599	| Cyan	 | Specialist	<br>
-1200 — 1399	| Green	 | Pupil	<br>
-0 — 1199	  | Gray	 | Newbie	<br>
-
  <table>
   <tr>
     <th>Rating</th>
@@ -58,7 +52,7 @@
     <td>Pupil</td>
   </tr>
   <tr>
-    <td>0 - 1199</td>
+    <td>0 — 1199</td>
     <td>Gray</td>
     <td>Newbie</td>
   </tr>
