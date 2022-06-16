@@ -1,5 +1,7 @@
 # Codeforces-Solutions
 
+Rating - 843
+
  <table>
   <tr>
     <th>Rating</th>
