@@ -1,6 +1,6 @@
 # Codeforces-Solutions
 
-Rating - 890
+Rating - 934
 
  <table>
   <tr>
