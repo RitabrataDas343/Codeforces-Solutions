@@ -17,9 +17,9 @@ typedef int_fast64_t fast64;
 #define all(x) x.begin(), x.end()
 
 #define Yes cout << "YES" \
-                 << "\n"
+                 << "\n";
 #define No cout << "NO" \
-                << "\n"
+                << "\n";
 #define auto_init(v, x) \
     for (auto &x : v)   \
         cin >> x;
