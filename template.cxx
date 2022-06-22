@@ -32,10 +32,12 @@ typedef int_fast64_t fast64;
         cout << x << endl;
     
 #define vi vector<int>
-#define mpi map<int, int>
-#define mpll map<ll, ll>
+#define vc vector<char>
 #define vll vector<ll>
-#define vst vector<string>
+#define vst vector<string> 
+#define mpi map<int, int>
+#define mpci map<char, int>
+#define mpll map<ll, ll>
 #define pii pair<int, int>
 #define inf INT64_MAX
 
@@ -44,7 +46,7 @@ const lli mod = 1e18;
 using namespace std;
     
 int main(){
-    IOS_FASTAF
+    IO
     // Write your code here
     return 0;
 }
