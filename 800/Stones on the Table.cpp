@@ -49,6 +49,15 @@ using namespace std;
     
 int main(){
     IO
-    // Write your code here
+    int n, count = 0;
+    string s;
+    cin >> n;
+    cin >> s;
+    f(i, 0, ln(s)){
+        if(s[i] == s[i+1]){
+            count++;
+        }
+    }
+    cout << count << endl;
     return 0;
 }

@@ -49,6 +49,13 @@ using namespace std;
     
 int main(){
     IO
-    // Write your code here
+    int a, b, count = 0;
+    cin >> a >> b;
+    while(3*a - 2*b <= 0){
+        count++;
+        a = 3*a;
+        b = 2*b;
+    }
+    cout << count+1 << endl;
     return 0;
 }

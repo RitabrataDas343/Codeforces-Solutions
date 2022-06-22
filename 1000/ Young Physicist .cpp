@@ -49,6 +49,18 @@ using namespace std;
     
 int main(){
     IO
-    // Write your code here
+    int n, x = 0, y = 0, z = 0, a, b, c;
+    cin >> n;
+    f(i, 0, n){
+        cin >> a >> b >> c;
+        x += a;
+        y += b;
+        z += c;
+    }
+    if (x == 0 and y == 0 and z == 0){
+        Yes
+    } else {
+        No
+    }
     return 0;
 }
