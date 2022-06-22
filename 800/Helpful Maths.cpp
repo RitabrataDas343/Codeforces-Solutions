@@ -1,0 +1,63 @@
+#include <bits/stdc++.h>
+
+typedef long long int lli;
+typedef long long ll;
+typedef long double ld;
+typedef int_fast64_t fast64;
+
+#define IO                            \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL);                    \
+    cout.tie(NULL);
+    
+#define ln(x) x.length()
+#define pi 3.1415926535
+#define f(i, a, b) for (lli i = a; i < b; i++)
+#define rf(i, a, b) for (lli i = a; i >= b; i--)
+#define all(x) x.begin(), x.end()
+
+#define Yes cout << "YES" \
+                 << "\n";
+#define No cout << "NO" \
+                << "\n";
+#define auto_init(v, x) \
+    for (auto &x : v)   \
+        cin >> x;
+#define auto_display(v, x) \
+    for (auto x : v)       \
+        cout << x << " ";  \
+    cout << endl;
+#define auto_displayln(v, x) \
+    for (auto x : v)         \
+        cout << x << endl;
+    
+#define vi vector<int>
+#define mpi map<int, int>
+#define mpll map<ll, ll>
+#define vll vector<ll>
+#define vst vector<string>
+#define pii pair<int, int>
+#define inf INT64_MAX
+
+const lli mod = 1e18;
+    
+using namespace std;
+    
+int main(){
+    IO
+    string s, n = "";
+    cin >> s;
+    vi v;
+    f(i, 0, ln(s)){
+        if(s[i] != '+'){
+            v.push_back((s[i] - '0'));
+        }
+    }
+    sort(all(v));
+    int pos = 0;
+    for (auto x : v){
+        n += (to_string(x) + '+');
+    }       
+    cout << n.substr(0, n.length()-1) << endl;
+    return 0;
+}
