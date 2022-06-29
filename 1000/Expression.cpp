@@ -33,7 +33,6 @@ typedef int_fast64_t fast64;
     
 #define vi vector<int>
 #define vc vector<char>
-#define vbool vector<bool>
 #define vll vector<ll>
 #define vst vector<string> 
 #define pb(x) push_back(x);
@@ -50,6 +49,12 @@ using namespace std;
     
 int main(){
     IO
-    // Write your code here
+    int a, b, c;
+    cin >> a >> b >> c;
+    int ans = a + b + c;
+    ans = max(ans, (a + b) * c);
+	ans = max(ans, a * (b + c));
+	ans = max(ans, a * b * c);
+	cout << ans << endl;
     return 0;
 }

@@ -33,7 +33,6 @@ typedef int_fast64_t fast64;
     
 #define vi vector<int>
 #define vc vector<char>
-#define vbool vector<bool>
 #define vll vector<ll>
 #define vst vector<string> 
 #define pb(x) push_back(x);
@@ -50,6 +49,25 @@ using namespace std;
     
 int main(){
     IO
-    // Write your code here
+    int t, n, sum = 0, add = 0;
+    cin >> t;
+    mpi mp;
+    f(i, 0, t){
+        cin >> n;
+        mp[n]++;
+    }
+    sum += mp[4] + (mp[2] / 2) + mp[3];
+    if (mp[2] % 2){
+        add += 2;
+    }
+    if(mp[3] < mp[1]){
+        mp[1] -= mp[3];
+        add += mp[1];
+    } 
+    sum += (add/4);
+    if(add % 4){
+        sum++;
+    }
+    cout << sum << endl;
     return 0;
 }

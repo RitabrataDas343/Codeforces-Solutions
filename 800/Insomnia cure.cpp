@@ -50,6 +50,18 @@ using namespace std;
     
 int main(){
     IO
-    // Write your code here
+    lli k, l, m, n, d, count = 0;
+    bool flag;
+    cin >> k >> l >> m >> n >> d;
+    f(i, 1, d+1){
+        flag = false;
+        if((i % k == 0) or (i % l == 0) or (i % m == 0) or (i % n == 0)){
+            flag = true;
+        }
+        if(flag){
+            count++;
+        }
+    }
+    cout << count << endl;
     return 0;
 }

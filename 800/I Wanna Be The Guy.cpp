@@ -33,7 +33,6 @@ typedef int_fast64_t fast64;
     
 #define vi vector<int>
 #define vc vector<char>
-#define vbool vector<bool>
 #define vll vector<ll>
 #define vst vector<string> 
 #define pb(x) push_back(x);
@@ -50,6 +49,30 @@ using namespace std;
     
 int main(){
     IO
-    // Write your code here
+    int t, n, m, a;
+    bool flag = false;
+    cin >> t;
+    vi v(t, 0);
+    cin >> n;
+    f(i, 0, n){
+        cin >> a;
+        v[a-1] = 1;
+    }
+    cin >> m;
+    f(i, 0, m){
+        cin >> a;
+        v[a-1] = 1;
+    }
+    f(i, 0, v.size()){
+        if(v[i] == 0){
+            flag = true;
+            break;
+        }
+    }
+    if(flag){
+        cout << "Oh, my keyboard!" << endl;
+    } else {
+        cout << "I become the guy." << endl;
+    }
     return 0;
 }
