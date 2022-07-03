@@ -50,12 +50,8 @@ using namespace std;
     
 int main(){
     IO
-    lli r, c;
-    cin >> r >> c;
-    if(min(r,c) % 2){
-        cout << "Akshat\n";
-    } else {
-        cout << "Malvika\n";
-    }
+    int r, b;
+    cin >> r >> b;
+    cout << min(r, b) << " " << (r + b - 2*min(r,b)) / 2 << endl;
     return 0;
 }

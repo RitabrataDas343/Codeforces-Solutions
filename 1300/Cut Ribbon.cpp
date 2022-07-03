@@ -50,12 +50,18 @@ using namespace std;
     
 int main(){
     IO
-    lli r, c;
-    cin >> r >> c;
-    if(min(r,c) % 2){
-        cout << "Akshat\n";
-    } else {
-        cout << "Malvika\n";
+    int n, a, b, c, count = 0;
+    cin >> n >> a >> b >> c;
+    int arr[3] = {a, b, c};
+    sort(arr, arr + 3);
+    f(i, 0, 3){
+        if(arr[i] > n){
+            break;
+        } else {
+            n -= arr[i];
+            count++;
+        }
     }
+    cout << count << endl;
     return 0;
 }

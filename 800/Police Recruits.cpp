@@ -50,12 +50,16 @@ using namespace std;
     
 int main(){
     IO
-    lli r, c;
-    cin >> r >> c;
-    if(min(r,c) % 2){
-        cout << "Akshat\n";
-    } else {
-        cout << "Malvika\n";
+    int n, count = 0, sum = 0, a;
+    cin >> n;
+    f(i, 0, n){
+        cin >> a;
+        if(a == -1){
+            if(!sum) count++; else sum--;
+        } else{
+            sum += a;
+        }
     }
+    cout << count << endl;
     return 0;
 }

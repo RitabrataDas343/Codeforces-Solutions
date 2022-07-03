@@ -50,12 +50,20 @@ using namespace std;
     
 int main(){
     IO
-    lli r, c;
-    cin >> r >> c;
-    if(min(r,c) % 2){
-        cout << "Akshat\n";
-    } else {
-        cout << "Malvika\n";
+    int t, n, rem, i;
+    cin >> t;
+    while(t--){
+        cin >> n;
+        vi v;
+        i = 0;
+        while(n > 0){
+            rem = n % 10;
+            if(rem != 0) v.pb(rem * pow(10, i));
+            i++;
+            n /= 10;
+        }
+        cout << v.size() << endl;
+        auto_display(v, x);
     }
     return 0;
 }

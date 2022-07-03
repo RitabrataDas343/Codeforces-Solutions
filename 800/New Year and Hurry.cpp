@@ -50,12 +50,14 @@ using namespace std;
     
 int main(){
     IO
-    lli r, c;
-    cin >> r >> c;
-    if(min(r,c) % 2){
-        cout << "Akshat\n";
-    } else {
-        cout << "Malvika\n";
+    int n, k, i;
+    cin >> n >> k;
+    k = 240-k;
+    for(i = 1; i <= n; i++){
+        if((5 * i * (i + 1))/2 > k){
+            break;
+        }
     }
+    cout << i - 1 << endl;
     return 0;
 }
