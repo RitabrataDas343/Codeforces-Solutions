@@ -50,17 +50,17 @@ using namespace std;
     
 int main(){
     IO
-    int n, a, b, c, i, j, k, count = 0, rem;
-    cin >> n >> a >> b >> c;
-    for(i = 0; i * a <= n; ++i){
-        for(j = 0; i*a + j*b <= n; ++j){
-            rem = n - i*a - j*b;
-            if(rem % c == 0){
-                k = rem / c;
-                count=max(count, i+j+k);
-            }
+    int t;
+    lli a, b, mod;
+    cin >> t;
+    while(t--){
+        cin >> a >> b;
+        mod = abs(a - b) / 10;
+        if(abs(a - b) % 10 == 0){
+            cout << mod << endl;
+        } else {
+            cout << mod + 1 << endl;
         }
     }
-    cout << count << endl;
     return 0;
 }

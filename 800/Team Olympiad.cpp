@@ -50,17 +50,31 @@ using namespace std;
     
 int main(){
     IO
-    int n, a, b, c, i, j, k, count = 0, rem;
-    cin >> n >> a >> b >> c;
-    for(i = 0; i * a <= n; ++i){
-        for(j = 0; i*a + j*b <= n; ++j){
-            rem = n - i*a - j*b;
-            if(rem % c == 0){
-                k = rem / c;
-                count=max(count, i+j+k);
-            }
+    int t;
+    cin >> t;
+    int a[t];
+    vi v_one, v_two, v_three;
+    f(i, 0, t){
+        cin >> a[i];
+        switch(a[i]){
+            case 1:
+                v_one.pb(i+1);
+                break;
+            case 2:
+                v_two.pb(i+1);
+                break;
+            case 3:
+                v_three.pb(i+1);
+                break;
         }
     }
-    cout << count << endl;
+    auto m1 = min(v_one.size(), v_two.size());
+    auto sz = min(m1, v_three.size());
+    cout << sz << endl;
+    if(sz){
+        f(i, 0, sz){
+            cout << v_one[i] << " " << v_two[i] << " " << v_three[i] << endl;
+        }
+    }
     return 0;
 }

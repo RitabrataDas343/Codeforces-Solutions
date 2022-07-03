@@ -47,20 +47,34 @@ typedef int_fast64_t fast64;
 const lli mod = 1e18;
     
 using namespace std;
+
+const int MAX = 1000001;
+bool prime[MAX];
+void sieve(){
+    int i, j;
+    prime[0] = prime[1] = false;
+    for (i = 4; i < MAX; i += 2){
+        prime[i] = true;
+    }
+    for (i = 3; i*i <= MAX; i += 2){
+        if (!prime[i]){
+            for (j = i*i; j < MAX; j += 2*i){
+                prime[j] = true;
+            }
+        }
+    }     
+} 
     
 int main(){
     IO
-    int n, a, b, c, i, j, k, count = 0, rem;
-    cin >> n >> a >> b >> c;
-    for(i = 0; i * a <= n; ++i){
-        for(j = 0; i*a + j*b <= n; ++j){
-            rem = n - i*a - j*b;
-            if(rem % c == 0){
-                k = rem / c;
-                count=max(count, i+j+k);
-            }
+    sieve();
+    lli n;
+    cin >> n;
+    f(i, 4, n){
+        if(prime[i] and prime[n - i]){
+            cout << i << " " << n-i << endl;
+            break;
         }
     }
-    cout << count << endl;
     return 0;
 }

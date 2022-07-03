@@ -50,17 +50,19 @@ using namespace std;
     
 int main(){
     IO
-    int n, a, b, c, i, j, k, count = 0, rem;
-    cin >> n >> a >> b >> c;
-    for(i = 0; i * a <= n; ++i){
-        for(j = 0; i*a + j*b <= n; ++j){
-            rem = n - i*a - j*b;
-            if(rem % c == 0){
-                k = rem / c;
-                count=max(count, i+j+k);
-            }
+    int t;
+    cin >> t;
+    int a[t];
+    auto_init(a, x);
+    if(t == 1) {
+        cout << 0 << endl;
+    } else {
+        sort(a, a+t);
+        lli sum = 0;
+        f(i, 0, t-1){
+            sum += a[t-1] - a[i];
         }
+        cout << sum << endl;
     }
-    cout << count << endl;
     return 0;
 }
