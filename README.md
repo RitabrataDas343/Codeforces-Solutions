@@ -1,5 +1,7 @@
-# Codeforces-Solutions
-
+<div align = "center">
+<img src="https://user-images.githubusercontent.com/76585827/178682747-3085e091-020d-4db4-b555-029d89f08080.svg" height="100px"></img>
+</div>
+<br>
 <div align="center">
  <strong>Highest Rating - 975</strong>
 <br>
@@ -13,6 +15,7 @@ Incomplete :
 
 <br>
 
+<div align="center">
  <table>
   <tr>
     <th>Rating</th>
@@ -70,3 +73,4 @@ Incomplete :
     <td>Newbie</td>
   </tr>
 </table> 
+</div>
