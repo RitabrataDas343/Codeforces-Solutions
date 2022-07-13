@@ -50,17 +50,27 @@ using namespace std;
     
 int main(){
     IO
-    lli n;
-    cin >> n;
-    lli a[n];
-    mpll mp;
-    set<ll> s;
-    f(i, 0, n){
-        cin >> a[i];
-        mp[a[i]] += a[i];
-        s.insert(a[i]);
+    lli t, n;
+    cin >> t;
+    while(t--){
+        cin >> n;
+        lli a[n], sum = 0;
+        mpll mp;
+        f(i, 0, n){
+            cin >> a[i];
+            sum += a[i];
+            mp[a[i]]++;
+        }
+        sort(a, a + n);
+        if(sum % 2){
+            No
+        } else {
+            if((mp[2] % 2 == 1) and (mp[1] == 0)){
+                No
+            } else {
+                Yes
+            }
+        }
     }
-    sort(all(s));
-
     return 0;
 }

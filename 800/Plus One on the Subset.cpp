@@ -50,17 +50,17 @@ using namespace std;
     
 int main(){
     IO
-    lli n;
-    cin >> n;
-    lli a[n];
-    mpll mp;
-    set<ll> s;
-    f(i, 0, n){
-        cin >> a[i];
-        mp[a[i]] += a[i];
-        s.insert(a[i]);
+    lli t, n;
+    cin >> t;
+    while(t--){
+        cin >> n;
+        lli a[n], maxc = INT_MIN, minc = INT_MAX;
+        f(i, 0, n){
+            cin >> a[i];
+            maxc = max(maxc, a[i]);
+            minc = min(minc, a[i]);
+        }
+        cout << maxc - minc << endl;
     }
-    sort(all(s));
-
     return 0;
 }

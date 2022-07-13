@@ -50,17 +50,13 @@ using namespace std;
     
 int main(){
     IO
-    lli n;
-    cin >> n;
-    lli a[n];
-    mpll mp;
-    set<ll> s;
-    f(i, 0, n){
-        cin >> a[i];
-        mp[a[i]] += a[i];
-        s.insert(a[i]);
+    lli a[4], sum = 0;
+    auto_init(a, x);
+    string s;
+    cin >> s;
+    for(char m : s){
+        sum += a[m - '0' - 1];
     }
-    sort(all(s));
-
+    cout << sum << endl;
     return 0;
 }

@@ -50,18 +50,12 @@ using namespace std;
     
 int main(){
     IO
-    lli t, n, count, num;
-    cin >> t;
-    while(t--){
-        cin >> n;
-        num = n;
-        int i = 0;
-        count = 0;
-        while(n > 0){
-            n /= 10;
-            count++;
-        }
-        cout << fixed << setprecision(0) << num - pow(10, count - 1) << endl;
+    lli a, b;
+    cin >> a >> b;
+    if(b < 1 or b > 9*a){
+        cout << "-1 -1" << endl;
+    } else {
+        string m = "";
     }
     return 0;
 }

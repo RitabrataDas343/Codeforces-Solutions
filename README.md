@@ -1,6 +1,14 @@
 # Codeforces-Solutions
 
-Rating - 934
+Highest Rating - 975
+Recent Rating - 975
+
+Incomplete :
+* Boredom
+* Given Length and Sum of Digits
+* BerSU Ball
+
+<br>
 
  <table>
   <tr>

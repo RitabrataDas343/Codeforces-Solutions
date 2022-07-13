@@ -50,40 +50,32 @@ using namespace std;
     
 int main(){
     IO
-    lli t, p, price, diff;
-    string s, r, dup;
-    vector<ll>::iterator itr;
-    cin >> t;
-    while(t--){
-        cin >> s;
-        cin.ignore(1, '\n');
-        cin >> p;
-        r = "";
-        dup = s;
-        mpci mp;
-        vll v;
-        sort(all(dup));
-        price = 0;
-        for(char m : dup){
-            price += m - 'a' + 1;
-            v.pb(price);
-        }
-        diff = price - p;
-        if(diff <= 0){
-            r = s;
+    lli n, m, count = 0;
+    cin >> n;
+    lli a[n];
+    auto_init(a, x);
+    cin >> m;
+    lli b[m];
+    auto_init(b, x);
+    sort(a, a + n, greater<int>());
+    sort(b, b + m, greater<int>());
+    lli left_a = 0, left_b = 0;
+    while(left_a != n and left_b != m){
+        if(abs(a[left_a] - b[left_b]) <= 1){
+            left_b++;
+            count++;
         } else {
-            itr = upper_bound(all(v), p);
-            for(int i = 0; i < itr - v.begin(); i++){
-                mp[dup[i]]++;
+            left_b++;
+            if(left_b == m){
+                break;
             }
-            f(i, 0, ln(s)){
-                if(mp[s[i]] != 0){
-                    r += s[i];
-                    mp[s[i]]--;
-                }
+            if(abs(a[left_a] - b[left_b]) <= 1){
+                count++;
+                left_b++;
             }
         }
-        cout << r << endl;
+        left_a++;
     }
+    cout << count << endl;
     return 0;
 }

@@ -47,20 +47,29 @@ typedef int_fast64_t fast64;
 const lli mod = 1e18;
     
 using namespace std;
+ 
     
 int main(){
     IO
-    lli n;
-    cin >> n;
-    lli a[n];
-    mpll mp;
-    set<ll> s;
-    f(i, 0, n){
-        cin >> a[i];
-        mp[a[i]] += a[i];
-        s.insert(a[i]);
+    lli t, n;
+    cin >> t;
+    bool flag;
+    while(t--){
+        cin >> n;
+        flag = false;
+        while(n > 1){
+            if(n % 2){
+                flag = true;
+                break;
+            } else {
+                n /= 2;
+            }
+        }
+        if(flag){
+            Yes
+        } else{
+            No
+        }
     }
-    sort(all(s));
-
     return 0;
 }

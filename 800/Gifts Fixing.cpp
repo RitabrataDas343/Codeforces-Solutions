@@ -50,17 +50,28 @@ using namespace std;
     
 int main(){
     IO
-    lli n;
-    cin >> n;
-    lli a[n];
-    mpll mp;
-    set<ll> s;
-    f(i, 0, n){
-        cin >> a[i];
-        mp[a[i]] += a[i];
-        s.insert(a[i]);
+    lli t, n, count;
+    cin >> t;
+    while(t--){
+        cin >> n;
+        lli a[n], b[n], min_a = INT_MAX, min_b = INT_MAX;        
+        f(i, 0, n){
+            cin >> a[i];
+            min_a = min(min_a, a[i]);
+        }
+        f(i, 0, n){
+            cin >> b[i];
+            min_b = min(min_b, b[i]);
+        }
+        count = 0;
+        f(i, 0, n){
+            if(a[i] == min_a or b[i] == min_b){
+                count += a[i] - min_a + b[i] - min_b;
+            } else {
+                count += max(a[i] - min_a, b[i] - min_b);
+            }
+        }
+        cout << count << endl;
     }
-    sort(all(s));
-
     return 0;
 }

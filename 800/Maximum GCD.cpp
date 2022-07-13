@@ -33,7 +33,6 @@ typedef int_fast64_t fast64;
     
 #define vi vector<int>
 #define vc vector<char>
-#define vbool vector<bool>
 #define vll vector<ll>
 #define vst vector<string> 
 #define pb(x) push_back(x);
@@ -50,30 +49,11 @@ using namespace std;
     
 int main(){
     IO
-    lli t, n, m, a, d, b;
-    vector<int>::iterator ind1, ind2;
+    lli t, n;
     cin >> t;
     while(t--){
-        cin >> n >> m;
-        vi v;
-        map<int, vector<int>> mp;
-        f(i, 0, n){
-            cin >> a;
-            v.pb(a);
-            mp[a].pb(i);
-        }
-        while(m--){
-            cin >> d >> b;
-            if(mp[d].size() != 0 and mp[b].size() != 0){
-                if(mp[d][0] < mp[b][mp[b].size() - 1]){
-                    Yes
-                } else {
-                    No
-                }
-            } else {
-                No
-            }
-        }
+        cin >> n;
+        cout << n / 2 << endl;
     }
     return 0;
 }

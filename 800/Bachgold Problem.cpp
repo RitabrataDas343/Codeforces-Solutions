@@ -52,15 +52,17 @@ int main(){
     IO
     lli n;
     cin >> n;
-    lli a[n];
-    mpll mp;
-    set<ll> s;
-    f(i, 0, n){
-        cin >> a[i];
-        mp[a[i]] += a[i];
-        s.insert(a[i]);
+    cout << n / 2 << endl;
+    if(n % 2){
+        f(i, 0, n/2 - 1){
+            cout << 2 << " ";
+        }
+        cout << 3 << endl;
+    } else {
+        f(i, 0, n/2){
+            cout << 2 << " ";
+        }
+        cout << endl;
     }
-    sort(all(s));
-
     return 0;
 }

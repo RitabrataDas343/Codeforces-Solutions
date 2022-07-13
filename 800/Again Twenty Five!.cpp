@@ -50,36 +50,7 @@ using namespace std;
     
 int main(){
     IO
-    lli t, n, a, b;
-    bool flag;
-    cin >> t;
-    while(t--){
-        cin >> n;
-        mpll mp1, mp2;
-        flag = true;
-        while(n--){
-            cin >> a >> b;
-            if(a == b){
-                flag = false;
-            } else {
-                if(mp1[a] == 0 and mp1[b] == 0){
-                    mp1[a]++;
-                    mp1[b]++;
-                } else {
-                    if(mp2[a] == 0 and mp2[b] == 0){
-                        mp2[a]++;
-                        mp2[b]++;
-                    } else {
-                        flag = false;
-                    }
-                }
-            }
-        }
-        if(flag){
-            Yes
-        } else {
-            No
-        }
-    }
-    return 0;
+    lli n;
+    cin >> n;
+    cout << 25 << endl;
 }

@@ -50,17 +50,15 @@ using namespace std;
     
 int main(){
     IO
-    lli n;
-    cin >> n;
-    lli a[n];
-    mpll mp;
-    set<ll> s;
-    f(i, 0, n){
-        cin >> a[i];
-        mp[a[i]] += a[i];
-        s.insert(a[i]);
+    lli a, b;
+    cin >> a >> b;
+    lli days = a, renew = 0, rem = 0;
+    while((a + rem) >= b){
+        renew = (a + rem) / b;
+        rem = (a + rem) % b;
+        days += renew;
+        a = renew;
     }
-    sort(all(s));
-
+    cout << days << endl;
     return 0;
 }

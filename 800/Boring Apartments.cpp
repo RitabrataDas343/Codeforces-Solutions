@@ -50,25 +50,12 @@ using namespace std;
     
 int main(){
     IO
-    lli t, count;
-    string s;
+    lli t;
+    string n;
     cin >> t;
     while(t--){
-        cin >> s;
-        mpci mp;
-        count = 0;
-        f(i, 0, ln(s)){
-            mp[s[i]]++;
-            if(mp.size() == 4){
-                count++;
-                mp.clear();
-                mp[s[i]]++;
-            }
-        }
-        if(mp.size() != 0){
-            count++;
-        }
-        cout << count << endl;
+        cin >> n;
+        cout << 10 * (n[0] - '0' - 1) + (ln(n) * (ln(n) + 1) / 2) << endl;
     }
     return 0;
 }
