@@ -1,8 +1,10 @@
 # Codeforces-Solutions
 
-Highest Rating - 975
+<div align="center">
+ <strong>Highest Rating - 975</strong>
 <br>
-Recent Rating - 975
+ <strong>Recent Rating - 975</strong>
+</div>
 
 Incomplete :
 * Boredom
