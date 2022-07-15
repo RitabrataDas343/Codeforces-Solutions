@@ -3,15 +3,15 @@
 </div>
 <br>
 <div align="center">
- <strong>Highest Rating - 975</strong>
+ <strong>Highest Rating - 980</strong>
 <br>
- <strong>Recent Rating - 975</strong>
+ <strong>Recent Rating - 980</strong>
 </div>
 
 Incomplete :
-* Boredom
-* Given Length and Sum of Digits
-* BerSU Ball
+* Boredom (1500)
+* Given Length and Sum of Digits (1400)
+* BerSU Ball (1200)
 
 <br>
 
