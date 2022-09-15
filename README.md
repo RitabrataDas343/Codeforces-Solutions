@@ -3,9 +3,9 @@
 </div>
 <br>
 <div align="center">
- <strong>Highest Rating - 980</strong>
+ <strong>Highest Rating - 1031</strong>
 <br>
- <strong>Recent Rating - 980</strong>
+ <strong>Recent Rating - 1031</strong>
 </div>
 
 Incomplete :
