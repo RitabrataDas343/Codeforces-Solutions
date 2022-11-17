@@ -51,6 +51,15 @@ using namespace std;
     
 int main(){
     IO
-    // Write your code here
+    lli t, n;
+    cin >> t;
+    while(t--){
+        cin >> n;
+        if(n%2){
+            cout << n/2 + 1 << endl;
+        } else {
+            cout << n/2 << endl;
+        }
+    }
     return 0;
 }
