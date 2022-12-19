@@ -4,6 +4,7 @@ typedef long long int lli;
 typedef long long ll;
 typedef long double ld;
 typedef int_fast64_t fast64;
+typedef uint64_t ut;
 
 #define IO                            \
     ios_base::sync_with_stdio(false); \
@@ -50,32 +51,24 @@ using namespace std;
     
 int main(){
     IO
-    lli n, m, count = 0;
-    cin >> n;
-    lli a[n];
-    auto_init(a, x);
-    cin >> m;
-    lli b[m];
-    auto_init(b, x);
-    sort(a, a + n);
-    sort(b, b + m);
-    lli left_a = 0, left_b = 0;
-    while(left_a != n and left_b != m){
-        if(abs(a[left_a] - b[left_b]) <= 1){
-            left_b++;
-            count++;
-        } else {
-            left_b++;
-            if(left_b == m){
-                break;
-            }
-            if(abs(a[left_a] - b[left_b]) <= 1){
-                count++;
-                left_b++;
-            }
+    lli t, n;
+    cin >> t;
+    while(t--){
+        cin >> n;
+        lli a[n], maxx = INT_MIN, minx = INT_MAX;
+        mpll mp;
+        f(i, 0, n){
+            cin >> a[i];
+            mp[a[i]]++;
+            maxx = max(a[i], maxx);
+            minx = min(a[i], minx);
         }
-        left_a++;
+        if(maxx == minx){
+            cout << n * (n-1) << endl;
+        } else {
+            cout << 2 * mp[maxx] * mp[minx] << endl;
+        }
+        
     }
-    cout << count << endl;
     return 0;
 }
