@@ -85,6 +85,7 @@ ld sqrtld(ll n) { ld lo=0,hi=3037000499; while (hi-lo>eps) { ld m=(hi+lo)/2; if 
 ll cbrtll(ll n) { ll lo=0,hi=2097151; while (hi-lo>1) { ll m=(hi+lo)/2; if (m*m*m<=n) { lo=m; } else { hi=m-1; }} if (hi*hi*hi<=n) { return hi; } return lo; }
 ld cbrtld(ll n) { ld lo=0,hi=2097151; while (hi-lo>eps) { ld m=(hi+lo)/2; if ((n-m*m*m)>eps) { lo=m; } else { hi=m-eps; }} return lo; }
 ll getbit(ll n,ll pos){return ((n&(1ll<<pos))!=0ll);}
+ll setbit(ll n,ll pos, int val=1){lli mask = 1 << pos; return n | mask;}
 
 int mod_inv(int a, ll m=mod) { a = a % m; return binexp(a,m-2,m); }
 int mod_add(int a, int b, ll m=mod) { a = a % m; b = b % m; return (((a + b) % m) + m) % m; }
