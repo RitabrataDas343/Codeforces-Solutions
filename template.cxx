@@ -8,7 +8,7 @@ typedef long double ld;
 typedef int_fast64_t fast64;
 typedef uint64_t ut;
 
-#define Sharmistha              ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define Ritabrata               ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     
 #define ln(x)                   x.length()
 #define all(x)                  x.begin(), x.end()
@@ -102,7 +102,7 @@ void solve(){
 }
     
 int32_t main(){
-    Sharmistha
+    Ritabrata
     lli t = 1;
     cin >> t;
     while(t--) solve();
